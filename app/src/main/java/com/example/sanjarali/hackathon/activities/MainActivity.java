@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         Region region=regions.get(i);
-        if (region.getRegion().toString().Equals("Sirdaryo viloyati")){
+        if (region.getRegion().toString().equals("Sirdaryo viloyati")){
             startActivity(new Intent(this,RegionOpenActivity.class));
         }
     }
